@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <style>
+      body {
+          margin: 0;
+          padding: 0;
+      }
+
+      #timeline {
+          display: flex;
+          height: 30px;
+          border: 1px solid #c4c4c4;
+          overflow: hidden;
+          margin: 20px auto;
+          background-color: #2e2e2e;
+          padding: 10px;
+          border-radius: 10px;
+          position: relative;
+          width: 90%;
+      }
+
+      #timeline div {
+          height: 100%;
+      }
+
+      #tooltip {
+          position: absolute;
+          background-color: white;
+          padding: 5px;
+          border: 1px solid black;
+          display: none;
+          z-index: 2;
+      }
+
+      .container {
+          display: flex;
+          align-items: center;
+          height: 100vh;
+      }
+
+  </style>
+</head>
+<body>
+<div id="loader" class="loader"></div>
+<div class="container">
+  <div id="timeline"></div>
+</div>
+<div id="tooltip"></div>
+<script src="timeline.js"></script>
+</body>
+</html>
